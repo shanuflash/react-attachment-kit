@@ -16,7 +16,7 @@ It features specialized viewers for different file types:
 Install the package along with its peer dependencies:
 
 ```bash
-npm install react-attachment-kit react-pdf react-intersection-observer media-chrome
+npm install react-attachment-kit react-pdf media-chrome
 ```
 
 **Requirements:**
@@ -103,15 +103,15 @@ const customDownload = (file) => {
 
 **PDF Preview**
 
-- Page-by-page navigation
-- Zoom controls
+- Scrollable multi-page view with thumbnail sidebar
+- Click thumbnails to jump to specific pages
+- Password-protected PDF support with built-in prompt
 - Loading states for large documents
 
 **Navigation**
 
 - Arrow buttons to move between files
-- Keyboard shortcuts (arrow keys, ESC to close)
-- File count indicator in header
+- ESC to close (via dialog)
 
 **Download**
 

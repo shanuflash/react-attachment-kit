@@ -6,11 +6,7 @@ import { Loader2, Lock } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  '../lib/pdf.worker.min.mjs',
-  import.meta.url
-).toString();
-// pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const Pdf = ({ data = {} }) => {
   const [numPages, setNumPages] = useState(null);
@@ -113,6 +109,7 @@ const Pdf = ({ data = {} }) => {
       )}
 
       <Document
+        key={data?.url}
         file={data?.url}
         onLoadSuccess={onDocumentLoadSuccess}
         onPassword={(callback, reason) => {

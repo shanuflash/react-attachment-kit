@@ -80,13 +80,13 @@ const otherFiles = [
     id: generateId(),
     name: 'Sample-pdf.pdf',
     type: 'application/pdf',
-    url: 'https://ss-staging-public.s3.amazonaws.com/temp-pdfs/ilovepdf_merged.pdf',
+    url: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
   },
   {
     id: generateId(),
-    name: 'Sample-pdf+Password.pdf',
+    name: 'Sample-pdf (Password: ELXRTQWS).pdf',
     type: 'application/pdf',
-    url: 'https://ss-staging-public.s3.amazonaws.com/temp-pdfs/Sample-pdf+Password.pdf',
+    url: 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/test/pdfs/issue3371.pdf',
   },
   {
     id: generateId(),
