@@ -126,8 +126,12 @@ const Pdf = ({ data = {} }) => {
           </div>
         }
         error={
-          <div className="flex items-center justify-center w-full h-full text-white">
+          <div className="flex flex-col items-center justify-center w-full h-full text-white gap-2">
             <p>Failed to load PDF file.</p>
+            <p className="text-sm text-white/50">
+              If you have a download manager extension, try disabling it for
+              this page.
+            </p>
           </div>
         }
         className="w-full h-full flex [&_.react-pdf__message]:w-full"
